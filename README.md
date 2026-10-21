@@ -69,7 +69,7 @@ py scripts/read_wordlib.py --xlsx 词库.xlsx --sheet 词库
 # 资格判断 + 匹配建议（按列名定位，不硬编码列）
 py scripts/classify_keywords.py --xlsx 词库.xlsx --sheet 词库 \
    --material "rubber" --threshold 350000 --big-threshold 110000 \
-   --own-brand "mikolo" --competitors "yes4all,ritfit" --out 结果.csv
+   --own-brand "<你的品牌>" --competitors "<竞品1,竞品2>" --out 结果.csv
 
 # 安全写 sheet（含 WPS DISPIMG 图片时必用，禁止 openpyxl 保存）
 py scripts/write_sheet_safe.py --xlsx 词库.xlsx --sheet 新Sheet --csv data.csv --mode new

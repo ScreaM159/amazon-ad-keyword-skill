@@ -3,7 +3,7 @@
 """关键词分类：先"资格判断"，再给"活动建议"。按列名定位，不硬编码列。
 用法:
   py classify_keywords.py --xlsx 词库.xlsx --sheet 词库 --material "rubber" \
-     --threshold 350000 --big-threshold 110000 --own-brand "mikolo" --competitors "yes4all,ritfit"
+     --threshold 350000 --big-threshold 110000 --own-brand "<your-brand>" --competitors "<comp1,comp2>"
 说明:
   - threshold / big-threshold 未给时，不做精准判定，标"待确认"。
   - 一个词一条记录；活动建议可多行（1:N），本脚本给"主建议"，多阶段安排另行生成。
